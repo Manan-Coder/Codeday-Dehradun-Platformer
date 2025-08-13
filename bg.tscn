@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx1qltrh2v6lw"]
+
+[ext_resource type="Texture2D" uid="uid://dyvgeyfcybn07" path="res://Background.png" id="1_dma1d"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-6, 80)
+texture = ExtResource("1_dma1d")
+
+[node name="Background2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(122, 78)
+scale = Vector2(0.76875, 1)
+texture = ExtResource("1_dma1d")
+
+[node name="Background3" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(245, 78)
+scale = Vector2(0.76875, 1)
+texture = ExtResource("1_dma1d")
+
+[node name="Background4" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(367, 78)
+scale = Vector2(0.76875, 1)
+texture = ExtResource("1_dma1d")
+
+[node name="Background5" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(610, 77)
+scale = Vector2(0.76875, 1)
+texture = ExtResource("1_dma1d")
+
+[node name="Background6" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(489, 77)
+scale = Vector2(0.76875, 1)
+texture = ExtResource("1_dma1d")
+
+[node name="Background7" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(750, 77)
+texture = ExtResource("1_dma1d")
+
+[node name="Background8" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(890, 76)
+scale = Vector2(0.76875, 1)
+texture = ExtResource("1_dma1d")
+
+[node name="Background9" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1012.5, 75)
+scale = Vector2(0.76875, 1)
+texture = ExtResource("1_dma1d")
+
+[node name="Background10" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1134.5, 75)
+scale = Vector2(0.76875, 1)
+texture = ExtResource("1_dma1d")
+
+[node name="Background11" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1377.5, 74)
+scale = Vector2(0.76875, 1)
+texture = ExtResource("1_dma1d")
+
+[node name="Background12" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1256.5, 74)
+scale = Vector2(0.76875, 1)
+texture = ExtResource("1_dma1d")
