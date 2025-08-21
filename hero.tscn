@@ -5,6 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://4ginikejnubk" path="res://character/jump.png" id="2_awrws"]
 [ext_resource type="Texture2D" uid="uid://d2j5emn65peam" path="res://character/walk.png" id="4_wr1l8"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdlp7"]
+radius = 14.0
+height = 66.0
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_3cgld"]
 atlas = ExtResource("1_n38ew")
 region = Rect2(0, 0, 99, 250)
@@ -233,12 +237,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdlp7"]
-radius = 14.0
-height = 66.0
-
 [node name="hero" type="CharacterBody2D"]
+collision_layer = 8
 script = ExtResource("1_x5eiv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-16, 85)
+shape = SubResource("CapsuleShape2D_rdlp7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-17.5, 85.5)
@@ -246,7 +251,11 @@ scale = Vector2(0.26776, 0.285156)
 sprite_frames = SubResource("SpriteFrames_77hda")
 animation = &"walk"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-16, 85)
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(52, 45)
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-68, 40)
 rotation = -3.14159
 shape = SubResource("CapsuleShape2D_rdlp7")
